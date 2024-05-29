@@ -17,7 +17,8 @@ For mainting music playback during scene changes and blending between tracks.
 * Includes a simple scene extending `AudioStreamPlayer` with the audio bus and autoplay already set.
 
 ### How it Works
-- `ProjectMusicController.tscn` is an autoload that keeps music playing between scenes. It detects music stream players as they are added to the scene tree, reparents them to itself, and blends the tracks.  
+- `ProjectMusicController.tscn` is an autoload that keeps music playing between scenes. It detects music stream players as they are added to the scene tree, reparents them  to itself when they are removed, and blends the tracks.
+- An audio bus is added at runtime that manages blending the fade in with any other animations on a music player.  
   
 ## Installation
 
