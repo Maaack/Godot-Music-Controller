@@ -17,7 +17,7 @@ For mainting music playback during scene changes and blending between tracks.
 * Includes a simple scene extending `AudioStreamPlayer` with the audio bus and autoplay already set.
 
 ### How it Works
-- `ProjectMusicController.tscn` is an autoload that keeps music playing between scenes. It detects music stream players as they are added to the scene tree, reparents them  to itself when they are removed, and blends the tracks.
+- `project_music_controller.tscn` is an autoload that keeps music playing between scenes. It detects music stream players as they are added to the scene tree, reparents them  to itself when they are removed, and blends the tracks.
 - An audio bus is added at runtime that manages blending the fade in with any other animations on a music player.  
   
 ## Installation
@@ -54,7 +54,16 @@ Users that want additional features can try [Maaack's Game Template](https://git
 
 ## Usage
 
-Use `AudioStreamPlayer` nodes in your scenes to play background music as normal. Make sure a matching audio bus is set (`Music` by default), and that autoplay is set to true.
+In your project settings, under the `Globals` tab, confirm that the `ProjectMusicController` is listed as an autoload.
+
+Open `project_music_controller.tscn` scene, and inspect the root node of the scene tree. Set the music controller's audio bus to the one designated for playing background music ("Music" by default).
+
+> [!IMPORTANT]  
+> The controller assumes a "Music" audio bus has been added to the project. The `Audio` controls are usually available on the bottom panel of the editor.  
+
+Use `AudioStreamPlayer` nodes in your scenes to play background music as normal. Set the audio bus to the one designated for playing background music, and set autoplay to true.  
+
+You should be able to interact with your audio stream in the scene as normal. It will not get reparented until it's parent scene exits the scene tree.  
 
 ## Links
 [Attribution](ATTRIBUTION.md)  
