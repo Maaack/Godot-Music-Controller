@@ -28,12 +28,6 @@ const MINIMUM_VOLUME_DB = -80
 		if fade_in_duration < 0:
 			fade_in_duration = 0
 
-@export var blend_volume_duration : float = 0.0 :
-	set(value):
-		blend_volume_duration = value
-		if blend_volume_duration < 0:
-			blend_volume_duration = 0
-
 ## Matched stream players with no stream set will stop current playback.
 @export var empty_streams_stop_player : bool = true
 
@@ -104,7 +98,7 @@ func _connect_stream_on_tree_exiting( stream_player : AudioStreamPlayer ):
 		stream_player.tree_exiting.connect(_on_removed_music_player.bind(stream_player))
 
 func _blend_and_remove_stream_player( stream_player : AudioStreamPlayer ):
-	var playback_position := music_stream_player.get_playback_position()
+	var playback_position := music_stream_player.get_playback_position() + AudioServer.get_time_since_last_mix()
 	var old_stream_player = music_stream_player
 	music_stream_player = stream_player
 	music_stream_player.bus = blend_audio_bus
@@ -143,7 +137,7 @@ func play_stream( audio_stream : AudioStream ) -> AudioStreamPlayer:
 	return stream_player
 
 func _clone_music_player( stream_player : AudioStreamPlayer ):
-	var playback_position := stream_player.get_playback_position()
+	var playback_position := stream_player.get_playback_position() + AudioServer.get_time_since_last_mix()
 	var audio_stream := stream_player.stream
 	music_stream_player = get_stream_player(audio_stream)
 	music_stream_player.volume_db = stream_player.volume_db
@@ -152,7 +146,7 @@ func _clone_music_player( stream_player : AudioStreamPlayer ):
 	music_stream_player.play.call_deferred(playback_position)
 
 func _reparent_music_player( stream_player : AudioStreamPlayer ):
-	var playback_position := stream_player.get_playback_position()
+	var playback_position := stream_player.get_playback_position() + AudioServer.get_time_since_last_mix()
 	stream_player.owner = null
 	stream_player.reparent.call_deferred(self)
 	stream_player.play.call_deferred(playback_position)
