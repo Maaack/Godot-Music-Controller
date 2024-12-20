@@ -56,7 +56,7 @@ Users that want additional features can try [Maaack's Game Template](https://git
 
 In your project settings, under the `Globals` tab, confirm that the `ProjectMusicController` is listed as an autoload.
 
-Open `addons/maacks_music_controller/base/scenes/Autoloads/ProjectMusicController.tscn` scene, and inspect the root node of the scene tree. Set the music controller's audio bus to the one designated for playing background music ("Music" by default).
+Open `addons/maaacks_music_controller/base/scenes/Autoloads/ProjectMusicController.tscn` scene, and inspect the root node of the scene tree. Set the music controller's audio bus to the one designated for playing background music ("Music" by default).
 
 > [!IMPORTANT]  
 > The controller assumes a "Music" audio bus has been added to the project. The `Audio` controls are usually available on the bottom panel of the editor.  
