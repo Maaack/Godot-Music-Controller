@@ -29,7 +29,7 @@ Users that want additional features can try [Maaack's Game Template](https://git
 ### Godot Asset Library
 This package is available as a plugin, meaning it can be added to an existing project. 
 
-![Package Icon](/addons/maaacks_music_controller/media/MusicController-Icon-black-transparent-256x256.png)  
+![Package Icon](/addons/maaacks_music_controller/media/music_controller-icon-black-transparent-256x256.png)  
 
 When editing an existing project:
 
