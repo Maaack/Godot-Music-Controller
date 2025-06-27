@@ -1,13 +1,16 @@
 # Godot Music Controller
-For Godot 4.2
+For Godot 4.4 (4.3+ compatible)
 
 This music controller keeps music playing between scenes and blends tracks.
 
 [Example on itch.io](https://maaack.itch.io/godot-game-template)  
 _Example is of [Maaack's Game Template](https://github.com/Maaack/Godot-Game-Template), which includes additional features._
 
-## Use Case
+## Objective
+
 For mainting music playback during scene changes and blending between tracks.
+
+[Maaack's Game Template](https://github.com/Maaack/Godot-Game-Template) is recommended for first time users, especially those new to Godot.  
 
 ## Features
 
@@ -23,6 +26,7 @@ For mainting music playback during scene changes and blending between tracks.
 ### Extras or Components
 
 Users that want additional features can try [Maaack's Game Template](https://github.com/Maaack/Godot-Game-Template) or other options from the [plugin suite](/addons/maaacks_music_controller/docs/PluginSuite.md).  
+
 
 ## Installation
 
@@ -40,7 +44,7 @@ When editing an existing project:
 5.  Check that contents are getting installed to `addons/` and there are no conflicts.
 6.  Click to Install.
 7.  Reload the project (you may see errors before you do this).
-8.  Enable the plugin from the Project Settings > Plugins tab.
+8.  Enable the plugin from the Project Settings > Plugins tab.  
 
 
 ### GitHub
@@ -52,9 +56,6 @@ When editing an existing project:
 4.  Open/Reload the project.  
 5.  Enable the plugin from the Project Settings > Plugins tab.  
 
-#### Extras
-
-Users that want additional features can try [Maaack's Game Template](https://github.com/Maaack/Godot-Game-Template).  
 
 ## Usage
 
@@ -69,11 +70,17 @@ Use `AudioStreamPlayer` nodes in your scenes to play background music as normal.
 
 You should be able to interact with your audio stream in the scene as normal. It will not get reparented until it's parent scene exits the scene tree.  
 
+### More Documentation
+
+[Automatic Updating](/addons/maaacks_music_controller/docs/AutomaticUpdating.md)  
+
+---
+
 ## Featured Games
 
 | Spud Customs | Rent Seek Kill  | A Darkness Like Gravity  |  
 | :-------:| :-------: | :-------: |
-![Spud Customs](/addons/maaacks_music_controller/media/screenshot-game-spud-customs.png)  |  ![Rent-Seek-Kill](/addons/maaacks_music_controller/media/screenshot-game-rent-seek-kill.png)  |  ![A Darkness Like Gravity](/addons/maaacks_music_controller/media/screenshot-game-a-darkness-like-gravity.png)  |
+![Spud Customs](/addons/maaacks_music_controller/media/thumbnail-game-spud-customs.png)  |  ![Rent-Seek-Kill](/addons/maaacks_music_controller/media/thumbnail-game-rent-seek-kill.png)  |  ![A Darkness Like Gravity](/addons/maaacks_music_controller/media/thumbnail-game-a-darkness-like-gravity.png)  |
 [Find on Steam](https://store.steampowered.com/app/3291880/Spud_Customs/) | [Play on itch.io](https://xandruher.itch.io/rent-seek-kill)  |  [Play on itch.io](https://maaack.itch.io/a-darkness-like-gravity)  |
 
 
@@ -83,8 +90,9 @@ You should be able to interact with your audio stream in the scene as normal. It
 ## Community
 
 Join the [Discord server](https://discord.gg/AyZrJh5AMp ) and share your work with others. It's also a space for getting or giving feedback, and asking for help. 
+ 
 
 ## Links
-[Attribution](ATTRIBUTION.md)  
-[License](LICENSE.txt)  
+[Attribution](/addons/maaacks_music_controller/ATTRIBUTION.md)  
+[License](/addons/maaacks_music_controller/LICENSE.txt)  
 [Godot Asset Library](https://godotengine.org/asset-library/asset/2898)  
