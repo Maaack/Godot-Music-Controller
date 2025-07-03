@@ -1,5 +1,9 @@
 @tool
+class_name MaaacksMusicControllerPlugin
 extends EditorPlugin
+
+const APIClient = preload("res://addons/maaacks_music_controller/utilities/api_client.gd")
+const DownloadAndExtract = preload("res://addons/maaacks_music_controller/utilities/download_and_extract.gd")
 
 const PLUGIN_NAME = "Maaack's Music Controller"
 const PROJECT_SETTINGS_PATH = "maaacks_music_controller/"
