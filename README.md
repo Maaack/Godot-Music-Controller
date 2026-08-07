@@ -1,5 +1,5 @@
 # Godot Music Controller
-For Godot 4.5 (4.3+ compatible)
+For Godot 4.7 (4.3+ compatible)
 
 This music controller keeps music playing between scenes and blends tracks.
 
@@ -104,10 +104,10 @@ The autoload will work with any `AudioStreamPlayer` with `bus` set to `Music` an
 
 ## Featured Games
 
-| Spud Customs | Rent Seek Kill  | A Darkness Like Gravity  |  
+| HeartFix Express | Baking Godium | Rent Seek Kill |  
 | :-------:| :-------: | :-------: |
-![Spud Customs](/addons/maaacks_music_controller/media/thumbnail-game-spud-customs.png)  |  ![Rent-Seek-Kill](/addons/maaacks_music_controller/media/thumbnail-game-rent-seek-kill.png)  |  ![A Darkness Like Gravity](/addons/maaacks_music_controller/media/thumbnail-game-a-darkness-like-gravity.png)  |
-[Find on Steam](https://store.steampowered.com/app/3291880/Spud_Customs/) | [Play on itch.io](https://xandruher.itch.io/rent-seek-kill)  |  [Play on itch.io](https://maaack.itch.io/a-darkness-like-gravity)  |
+| ![HeartFix Express](/addons/maaacks_music_controller/media/thumbnail-game-heartfix-express.png) | ![Baking Godium](/addons/maaacks_music_controller/media/thumbnail-game-baking-godium.png) | ![Rent-Seek-Kill](/addons/maaacks_music_controller/media/thumbnail-game-rent-seek-kill.png) |
+|  [Find on Steam](https://store.steampowered.com/app/3983290/HeartFix_Express_Demo/)  | [Play on itch.io](https://maaack.itch.io/baking-godium) | [Play on itch.io](https://xandruher.itch.io/rent-seek-kill)  |
 
 
 [All Shared Games](/addons/maaacks_music_controller/docs/GamesMade.md)  
