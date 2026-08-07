@@ -8,9 +8,9 @@ _Example is of [Maaack's Game Template](https://github.com/Maaack/Godot-Game-Tem
 
 ## Objective
 
-For mainting music playback during scene changes and blending between tracks.
+Setup blending between audio stream players in your scenes within 5 minutes.
 
-[Maaack's Game Template](https://github.com/Maaack/Godot-Game-Template) is recommended for first time users, especially those new to Godot.  
+[Maaack's Game Template](https://github.com/Maaack/Godot-Game-Template) is recommended for first time users.  
 
 ## Features
 
