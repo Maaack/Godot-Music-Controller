@@ -6,9 +6,6 @@ const PLUGIN_NAME = "Maaack's Music Controller"
 const PROJECT_SETTINGS_PATH = "maaacks_music_controller/"
 const PLUGIN_REPO_URL = "https://github.com/Maaack/Godot-Music-Controller"
 const MUSIC_CONTROLLER_RELATIVE_PATH = "base/scenes/autoloads/project_music_controller.tscn"
-const APIClient = preload("res://addons/maaacks_music_controller/utilities/api_client.gd")
-const DownloadAndExtract = preload("res://addons/maaacks_music_controller/utilities/download_and_extract.gd")
-
 const OPEN_EDITOR_DELAY : float = 0.1
 const MAX_PHYSICS_FRAMES_FROM_START : int = 60
 
