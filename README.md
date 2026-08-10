@@ -1,10 +1,17 @@
 # Godot Music Controller
-For Godot 4.7 (4.3+ compatible)
+![GitHub commit activity](https://img.shields.io/github/commit-activity/m/Maaack/Godot-Music-Controller)
+![GitHub Release Date](https://img.shields.io/github/release-date/Maaack/Godot-Music-Controller)
+[![Discord members](https://img.shields.io/discord/772191827570720798.svg?label=&logo=discord&logoColor=ffffff)](https://discord.gg/AyZrJh5AMp)  
 
 This music controller keeps music playing between scenes and blends tracks.
 
+For Godot 4.7 (4.3+ compatible)
+
 [Example on itch.io](https://maaack.itch.io/godot-game-template)  
 _Example is of [Maaack's Game Template](https://github.com/Maaack/Godot-Game-Template), which includes additional features._
+
+[Featured Games](#featured-games)  
+
 
 ## Objective
 
@@ -30,14 +37,14 @@ Users that want additional features can try [Maaack's Game Template](https://git
 
 ## Installation
 
-### Godot Asset Library
+### Godot Asset Store & Library
 This package is available as a plugin, meaning it can be added to an existing project. 
 
 ![Package Icon](/addons/maaacks_music_controller/media/music_controller-icon-black-transparent-256x256.png)  
 
 When editing an existing project:
 
-1.  Go to the `AssetLib` tab.
+1.  Go to the `Asset Store` tab.
 2.  Search for "Maaack's Music Controller".
 3.  Click on the result to open the plugin details.
 4.  Click to Download.
@@ -115,8 +122,8 @@ The autoload will work with any `AudioStreamPlayer` with `bus` set to `Music` an
 
 ## Community
 
-Join the [Discord server](https://discord.gg/AyZrJh5AMp ) and share your work with others. It's also a space for getting or giving feedback, and asking for help. 
- 
+Join the [Discord server](https://discord.gg/AyZrJh5AMp) and share your work with others. It's also a space for getting or giving feedback, and asking for help. 
+
 
 ## Links
 [Attribution](/addons/maaacks_music_controller/ATTRIBUTION.md)  
