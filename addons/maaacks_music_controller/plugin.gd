@@ -40,7 +40,6 @@ func _install_audio_busses() -> void:
 	var setting_key := MaaacksMusicController.get_settings_path() + "disable_install_audio_busses"
 	if not ProjectSettings.get_setting(setting_key, false):
 		_add_audio_bus("Music")
-		_add_audio_bus("SFX")
 		ProjectSettings.set_setting(setting_key, true)
 		ProjectSettings.save()
 

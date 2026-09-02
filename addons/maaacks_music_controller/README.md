@@ -29,7 +29,7 @@ Users that want additional features can try [Maaack's Game Template](https://git
 While editing a project in *Godot*:
 
 1.  Go to the **Asset Store** tab.
-2.  Search for "Maaack's Scene Loader".
+2.  Search for "Maaack's Music Controller".
 3.  Click on the result to open the plugin details.
 4.  Click to **Download**.
 5.  Check that contents are getting installed to `addons/` and there are no conflicts.
