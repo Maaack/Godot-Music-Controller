@@ -68,3 +68,9 @@ disable_install_audio_busses=true
 [physics]
 
 common/enable_pause_aware_picking=true
+
+[plugin_updater]
+
+plugins={
+"res://addons/maaacks_music_controller/": "https://github.com/Maaack/Godot-Music-Controller"
+}

@@ -2,15 +2,10 @@
 class_name MaaacksMusicControllerPlugin
 extends EditorPlugin
 
-const PLUGIN_NAME = "Maaack's Music Controller"
-const PROJECT_SETTINGS_PATH = "maaacks_music_controller/"
 const PLUGIN_REPO_URL = "https://github.com/Maaack/Godot-Music-Controller"
 const MUSIC_CONTROLLER_RELATIVE_PATH = "base/scenes/autoloads/project_music_controller.tscn"
 const OPEN_EDITOR_DELAY : float = 0.1
 const MAX_PHYSICS_FRAMES_FROM_START : int = 60
-
-static func get_plugin_name() -> String:
-	return PLUGIN_NAME
 
 func get_plugin_path() -> String:
 	return get_script().resource_path.get_base_dir() + "/"
@@ -42,16 +37,11 @@ func _add_audio_bus(bus_name : String) -> void:
 	ProjectSettings.save()
 
 func _install_audio_busses() -> void:
-	if not ProjectSettings.get_setting(PROJECT_SETTINGS_PATH + "disable_install_audio_busses", false):
+	var setting_key := MaaacksMusicController.get_settings_path() + "disable_install_audio_busses"
+	if not ProjectSettings.get_setting(setting_key, false):
 		_add_audio_bus("Music")
-		ProjectSettings.set_setting(PROJECT_SETTINGS_PATH + "disable_install_audio_busses", true)
+		ProjectSettings.set_setting(setting_key, true)
 		ProjectSettings.save()
-
-func _enable_plugin():
-	add_autoload_singleton("ProjectMusicController", get_plugin_path() + MUSIC_CONTROLLER_RELATIVE_PATH)
-
-func _disable_plugin():
-	remove_autoload_singleton("ProjectMusicController")
 
 func _add_to_auto_update_list() -> void:
 	var plugin_repos:Dictionary = ProjectSettings.get_setting("plugin_updater/plugins", {})
@@ -63,10 +53,14 @@ func _remove_from_auto_update_list() -> void:
 	plugin_repos.erase(get_plugin_path())
 	ProjectSettings.set_setting("plugin_updater/plugins", plugin_repos)
 
+func _enable_plugin():
+	_add_to_auto_update_list()
+	add_autoload_singleton("ProjectMusicController", get_plugin_path() + MUSIC_CONTROLLER_RELATIVE_PATH)
+
+func _disable_plugin():
+	_remove_from_auto_update_list()
+	remove_autoload_singleton("ProjectMusicController")
+
 func _enter_tree() -> void:
 	_install_audio_busses()
-	_add_to_auto_update_list()
 	_resave_if_recently_opened()
-
-func _exit_tree() -> void:
-	_remove_from_auto_update_list()
