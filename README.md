@@ -36,7 +36,7 @@ While editing a project in *Godot*:
 8.  Enable the plugin from the **Project > Project Settings > Plugins** tab.
 
 ## Usage
-Open up the `project_music_controller.tscn` autoload scene and adjust the *Fade In/Out Duration*.  
+Open up the `music_controller.tscn` autoload scene and adjust the *Fade In/Out Duration*.  
 
 Refer to [Blending Music](/addons/maaacks_music_controller/docs/BlendingMusic.md) for more details.
 
