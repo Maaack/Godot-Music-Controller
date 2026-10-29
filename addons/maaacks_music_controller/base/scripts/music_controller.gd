@@ -1,4 +1,3 @@
-class_name MusicController
 extends Node
 ## Controller for music playback across scenes.
 ##
