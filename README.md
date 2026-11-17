@@ -1,4 +1,4 @@
-![Package Icon](/addons/maaacks_music_controller/media/music_controller-icon-black-transparent-256x256.png)  
+![Package Icon](/media/music_controller-icon-black-transparent-256x256.png)  
 
 # Godot Music Controller
 ![GitHub commit activity](https://img.shields.io/github/commit-activity/m/Maaack/Godot-Music-Controller)
@@ -19,7 +19,7 @@ This template was originally made for Godot Wild Jam, and shares a no AI/LLM-gen
 
 ### Extras or Components
 
-Users that want additional features can try *[Maaack's Game Template](https://github.com/Maaack/Godot-Game-Template)* or other options from the [plugin suite](/addons/maaacks_music_controller/docs/PluginSuite.md).  
+Users that want additional features can try *[Maaack's Game Template](https://github.com/Maaack/Godot-Game-Template)* or other options from the [plugin suite](/docs/PluginSuite.md).  
 
 ## Installation
 
@@ -40,21 +40,21 @@ While editing a project in *Godot*:
 ## Usage
 Open up the `music_controller.tscn` autoload scene and adjust the *Fade In/Out Duration*.  
 
-Refer to [Blending Music](/addons/maaacks_music_controller/docs/BlendingMusic.md) for more details.
+Refer to [Blending Music](/docs/BlendingMusic.md) for more details.
 
 ### More Documentation
 
-[Automatic Updating](/addons/maaacks_music_controller/docs/AutomaticUpdating.md)  
+[Automatic Updating](/docs/AutomaticUpdating.md)  
 
 ## Featured Games
 
 | HeartFix Express | Baking Godium | Rent Seek Kill |  
 | :-------:| :-------: | :-------: |
-| ![HeartFix Express](/addons/maaacks_music_controller/media/thumbnail-game-heartfix-express.png) | ![Baking Godium](/addons/maaacks_music_controller/media/thumbnail-game-baking-godium.png) | ![Rent-Seek-Kill](/addons/maaacks_music_controller/media/thumbnail-game-rent-seek-kill.png) |
+| ![HeartFix Express](/media/thumbnail-game-heartfix-express.png) | ![Baking Godium](/media/thumbnail-game-baking-godium.png) | ![Rent-Seek-Kill](/media/thumbnail-game-rent-seek-kill.png) |
 |  [Find on Steam](https://store.steampowered.com/app/3983290/HeartFix_Express_Demo/)  | [Play on itch.io](https://maaack.itch.io/baking-godium) | [Play on itch.io](https://xandruher.itch.io/rent-seek-kill)  |
 
 
-[All Shared Games](/addons/maaacks_music_controller/docs/GamesMade.md)  
+[All Shared Games](/docs/GamesMade.md)  
 
 ## Community
 
