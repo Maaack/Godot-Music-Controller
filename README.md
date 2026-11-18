@@ -15,7 +15,7 @@ For *Godot 4.7* (4.3+ compatible)
 
 Setup blending between audio stream players in your scenes within 5 minutes.
 
-This template was originally made for Godot Wild Jam, and shares a no AI/LLM-gen policy. Please open an [issue](https://github.com/Maaack/Godot-Music-Controller/issues) if there is a violation.  
+This plugin was originally made for Godot Wild Jam, and shares a no AI/LLM-gen policy. Please open an [issue](https://github.com/Maaack/Godot-Music-Controller/issues) if there is a violation.  
 
 ### Extras or Components
 
